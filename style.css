@@ -1,0 +1,138 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.6; /* Improve readability */
+}
+
+.main {
+    width: 100%;
+    background-image: url('bg.jpg'); /* Corrected background image syntax */
+    background-position: center;
+    background-size: cover;
+    height: 100vh; /* Full viewport height */
+    position: relative;
+}
+
+.navbar {
+    width: 90%;
+    display: flex;
+    margin: auto;
+    padding: 15px 0;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10; /* Ensure navbar is above other content */
+}
+
+.navbar .logo {
+    width: 140px; /* Set a specific width for the logo */
+    height: auto; /* Maintain aspect ratio */
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    display: inline-block;
+    padding: 10px 16px;
+}
+
+ul li a {
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: darkslategray;
+    transition: .4s ease;
+}
+
+ul li a:hover {
+    color: rgb(230, 104, 59);
+}
+
+.info {
+    position: absolute; /* Positioning it absolutely */
+    top: 50%; /* Center vertically */
+    left: 7%; /* Align with the left margin */
+    transform: translateY(-50%); /* Adjust for centering */
+    color: darkslategray; /* Change text color for visibility */
+    z-index: 5; /* Ensure it is above the background */
+}
+
+.info h1 {
+    font-size: 65px;
+    color: rgb(120, 20, 20);
+}
+
+.info h3 {
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 24px;
+}
+
+.info span {
+    color: rgb(230, 104, 59);
+}
+
+.info a {
+    text-decoration: none;
+    color: #fff;
+    background: rgb(36, 32, 30);
+    margin: 26px 0;
+    padding: 10px 18px;
+    border-radius: 10px;
+    display: inline-block;
+    transition: .4s ease;
+}
+
+.info a:hover {
+    background: rgb(59, 174, 209);
+}
+
+.image {
+    width: 55%;
+    height: 55%;
+    position: absolute;
+    right: 100px;
+    bottom: 0;
+    object-position: 11px;
+}
+
+.image img {
+    position: absolute;
+    height: 140%;
+    left: 60%;
+    transform: translate(-55%);
+    bottom: 0;
+    transition: left 2s ease;
+}
+
+.image:hover .girl css
+{
+    left: 55%;
+}
+
+.icons a {
+    text-decoration: none;
+    color: #000;
+}
+
+.icons ion-icon {
+    margin-left: 7%;
+    color: #000;
+    margin-right: -60px;
+    font-size: 40px;
+    transition: .4s ease;
+}
+
+.icons ion-icon:hover {
+    color: rgb(59, 174, 209);
+}
