@@ -97,19 +97,20 @@ ul li a:hover {
     background: rgb(59, 174, 209);
 }
 
-.image {
-    width: 55%;
-    height: 55%;
+.img {
+    width: 65%; /* Adjust width based on parent container */
+    max-width: 100%; /* Ensures image does not overflow */
+    height: auto; /* Maintain aspect ratio */
     position: absolute;
-    right: 100px;
+    right: 5%; /* Use percentage for better responsiveness */
     bottom: 0;
-    object-position: 11px;
+    object-fit: cover; /* Ensures proper cropping */
 }
 
 .image img {
     position: absolute;
-    height: 140%;
-    left: 60%;
+    height: 80%;
+    left: 70%;
     transform: translate(-55%);
     bottom: 0;
     transition: left 2s ease;
